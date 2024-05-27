@@ -10,12 +10,37 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Image("school")
+                .resizable()
+                .frame(width: 100, height: 100)
+            
+            Spacer()
+            
+            Image("profile")
+                .resizable()
+                .frame(width: 200, height: 200)
+                .clipShape(Circle())
+                .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+            Text("Thapat Auechaikasem")
+                .font(.system(.title,design: .rounded))
+                .foregroundStyle(.white)
+                .frame(maxWidth: .infinity, maxHeight: 50)
+                .background(.green)
+                .cornerRadius(10)
+                .padding(.horizontal, 20)
+                .padding(.top, 10)
+            Text("Assumption College Thonburi")
+                .font(.system(.headline, design: .rounded))
+                .frame(maxWidth: .infinity)
+                .foregroundStyle(.black)
+            Text("Innovative Intelligence")
+                .font(.system(.headline, design: .rounded))
+                .frame(maxWidth: .infinity)
+                .foregroundStyle(.black)
+            
+            Spacer()
+            
         }
-        .padding()
     }
 }
 
